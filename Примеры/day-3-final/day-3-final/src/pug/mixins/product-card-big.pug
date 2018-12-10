@@ -1,0 +1,12 @@
+mixin product-card-big(imgsrc, title, color, price, specs)
+	.product-card-big
+		.product-card-big__img(style="background-image: url(./img/products/"+imgsrc+")") 
+			.product-card-big__price= price
+			
+		.product-card-big-content
+			div
+				.product-card-big__title= title
+				.product-card-big__color= color
+			.button-group
+				.button= specs
+				.button Buy Now
